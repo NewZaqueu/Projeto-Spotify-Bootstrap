@@ -12,7 +12,7 @@ body{
     font-family: Helvetica, Arial,  sans-serif;
 }
 
-/* NAVEGAÇÃO */
+/***************************** NAVEGAÇÃO *****************************/
 
 nav.navbar-transparent{
     background: rgba(0, 0, 0, 0.6);
@@ -38,7 +38,7 @@ nav.navbar-transparent{
     margin: 12px 15px;
 }
 
-/* TIPOGRAFIA */
+/***************************** TIPOGRAFIA *****************************/
 
 
 .titulos{
@@ -62,7 +62,13 @@ h3{
     font-size:2em;
 }
 
-/* CAPA */
+/***************************** CAPA *****************************/
+
+/* CAROUSEL */
+
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+}
 
 .btn-custom{
     color:white;
@@ -71,6 +77,8 @@ h3{
     transition: background 0.4s, color 0.4s;
     padding: 10px 20px;
 }
+
+
 
 .btn-roxo{
     background: #7c26f8;
@@ -88,7 +96,7 @@ h3{
     color: #000;
 }
 
-/* ********************** ESTRUTURA CONTEUDOS ********************** */
+/*-------------------------- ESTRUTURA CONTEUDOS --------------------------*/
 
 .padding{
     padding-top: 20px;
@@ -99,7 +107,7 @@ h3{
     background: #fff;
 }
 
-/* SERVIÇOS */
+/***************************** SERVIÇOS *****************************/
 
 
 #servicos h2,h3{
@@ -111,7 +119,7 @@ h3{
 
 }
 
-/* RECURSOS */
+/***************************** RECURSOS *****************************/
 
 #recursos h3{
     color: #9bf0e1;
@@ -133,7 +141,7 @@ h3{
 
 }
 
-/* FOOTER */
+/***************************** FOOTER *****************************/
 
 footer #logo img{
     width:142px;
@@ -184,12 +192,30 @@ footer .col-md-2{
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     
-    .btn-custom{
-        margin: 10px 15px;
-        padding:10px;
-        font-size:1em;
+    h1{
+        font-size:1.5em;
     }
 
+/* CORRIGINDO REBAIXO DOS TEXTOS NA TRANSIÇÃO DE SLIDES */
+    .carousel-item {
+        height:30vh;
+    }
+    
+    .btn-custom{
+        padding:5px 7px;
+        font-size:.8em;
+    }
+
+   #item-capa .btn-roxo{
+        position: relative!important;
+    }
+
+    #item-capa .btn-branco{
+        position: absolute;
+        left:50%; transform:translateX(-50%);
+        top:70%;
+    }
+/* ------------------------------------------------ */
  }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -197,12 +223,30 @@ footer .col-md-2{
    
     h1{
         font-size: 3em;
-    }   
-    .btn-custom{
-        margin: 10px 15px;
-        padding:15px;
-        font-size:1.5em;
+    } 
+    
+/* CORRIGINDO REBAIXO DOS TEXTOS NA TRANSIÇÃO DE SLIDES */
+
+    .carousel-item {
+        height:40vh;
     }
+
+    .btn-custom{
+        padding:12px;
+        font-size:1.3em;
+    }
+
+    #item-capa .btn-roxo{
+        position: relative!important;
+    }
+
+    #item-capa .btn-branco{
+        position: absolute;
+        left:50%; transform:translateX(-50%);
+        top:75%;
+    }
+
+    /* ------------------------------------------------ */
 
     #servicos .titulos{
         margin-top: 30px;
@@ -219,9 +263,30 @@ footer .col-md-2{
     h1{
         font-size: 4em;
     }   
-    .btn-custom{
-        margin: 10px 15px;
+    
+/* CORRIGINDO REBAIXO DOS TEXTOS NA TRANSIÇÃO DE SLIDES */
+
+    .carousel-item {
+        height:40vh;
     }
+
+    .btn-custom{
+        padding:10 15px;
+        font-size:1.3em;
+    }
+
+    #item-capa .btn-roxo{
+        position: relative!important;
+    }
+
+    #item-capa .btn-branco{
+        position: absolute;
+        left:50%; transform:translateX(-50%);
+        top:75%;
+    }
+
+/* ------------------------------------------------ */
+
     #servicos .titulos{
         margin-top: 30px;
     }
